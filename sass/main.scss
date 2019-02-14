@@ -1,0 +1,40 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
+
+/*
+@import "abstracts/functions";
+
+@import "base/base";
+
+
+*/
+
+
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+  // This is 1rem
+   	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}
