@@ -92,9 +92,6 @@
         opacity: 0;
         transition: opacity .2s;
   	}
-  	// &:checked {
-  	// 	opacity: 1;
-  	// }
   }
   &__radio-input:checked + &__radio-label &__radio-button:after {
         opacity: 1;
