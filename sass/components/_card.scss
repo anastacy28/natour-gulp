@@ -32,7 +32,7 @@
       	}
 
       	&-2 {
-            background-image: linear-gradient(to right bottom, $color-light-green, $color-primary);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
       	}
       } 	
 	}
@@ -59,7 +59,7 @@
 		}
 
 		&--2 {
-			background-image: linear-gradient(to right bottom, $color-light-green, $color-primary),  url(../img/nat-6.jpg);
+			background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary),  url(../img/nat-6.jpg);
 		}
 
 		&--3 {
@@ -92,7 +92,7 @@
 
 		&--2 {
 			padding: .7rem 1rem;
-			background-image: linear-gradient(to right bottom, rgba($color-light-green, .8), rgba($color-primary, .8));
+			background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8));
 		}
 
 		&--3 {
