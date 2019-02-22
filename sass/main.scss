@@ -1,9 +1,18 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+@import "base/base";
 @import "base/animation";
 @import "base/typography";
 @import "base/utilities";
+
+@import "pages/home";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
 
 @import "components/button";
 @import "components/composition";
@@ -13,32 +22,8 @@
 @import "components/bg-video";
 @import "components/form";
 @import "components/popup";
-
-@import "layout/grid";
-@import "layout/navigation";
-@import "layout/header";
-@import "layout/footer";
-
-@import "pages/home";
-
 /*
 @import "abstracts/functions";
-@import "base/base";
+
 */
 
-*,
-*:before,
-*:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
-html {
-  // This is 1rem
-   	font-size: 62.5%;
-}
-
-body {
-	box-sizing: border-box;
-}

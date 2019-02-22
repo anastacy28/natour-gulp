@@ -73,7 +73,7 @@
         text-transform: uppercase;
         color: #fff;
         text-align: right;
-        width: 54%;
+        width: 70%;
 
         position: absolute;
         top: 13rem;
@@ -138,6 +138,58 @@
 
 	&__price-value {
 		font-size: 6rem;
-		font-weight: 100;
+		font-weight: 300;
+	}
+
+
+
+// MEDIA
+	@media (max-width: 900px) {
+       height: auto;
+       box-shadow: 0 2rem 4rem rgba($color-black, .15);
+       background-color: $color-white-lighter;
+    
+	&__side {
+	   height: auto;
+       box-shadow: none;
+       transition: all .8s;
+       
+
+       position: relative;
+      
+      
+       &--back {
+      	
+      	transform: rotateY(0);
+      	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      } 	
+	}
+	
+	&:hover &__side--front {
+		transform: rotateY(0);
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0);
+	}
+
+// btn-cta
+	&__cta {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0);
+		width: 100%;
+		padding: 4rem;
+	}
+
+	&__price-box {
+        margin-bottom: 3rem;
+	}
+
+	&__price-value {
+		font-size: 4rem;
+		line-height: 1;
+	}	
 	}
 }

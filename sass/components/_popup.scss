@@ -17,7 +17,7 @@
        left: 50%;
 
        width: 75%;
-       height: 50rem;
+       height: auto;
        background-color: $color-white-lighter;
        box-shadow: 0 2rem 4rem rgba($color-black, .2);
        border-radius: 3px;
@@ -27,16 +27,39 @@
        transform: translate(-50%, -50%) scale(.4);
        transition: all .3s .75s;
        opacity: 0;
+
+       @media (max-width: 1200px) {
+           display: inline-block;
+       }
+
+       @media (max-width: 600px) {
+           width: 100%;
+       }
 	}
 
 	&__left {
        width: 33.333%;
        display: table-cell;
+
+       @media (max-width: 1200px) {
+           display: inline-block;
+           width: 100%;
+       }
+
+       @media (max-width: 600px) {
+           display: none;
+       }
 	}
 
 	&__img {
 		display: block;
 		width: 100%;
+
+     @media (max-width: 1200px) {
+           display: inline-block;
+           width: 49.8%;
+           height: auto;
+       }
 	}
 
 	&__right {
@@ -44,6 +67,16 @@
 	   display: table-cell;
 	   vertical-align: middle;
 	   padding: 3rem 5rem; 
+
+      @media (max-width: 1200px) {
+           display: inline-block;
+           width: 100%;
+       }
+      
+      @media (max-width: 600px) {
+           padding: 2rem; 
+      }
+
 	}
 
 	   &__text {
@@ -57,6 +90,17 @@
         column-count: 2;
         column-gap: 4rem; //1em = 14px;
         column-rule: 1px solid $color-white;
+ 
+        @media (max-width: 600px) {
+           -moz-column-count: 1;
+           -moz-column-gap: 4rem; //1em = 14px;
+           -moz-column-rule: 1px solid transparent;
+
+           column-count: 1;
+           column-rule: 1px solid transparent;
+
+           margin-bottom: 2rem;
+       }
     }
 
      &:target {
@@ -74,13 +118,18 @@
     	&:link,
     	&:visited {
     		position: absolute;
-            top: 2rem;
-            right: 2rem;
-            text-decoration: none;
-            font-size: 3.6rem;
-            color: $color-black;
-            display: inline-block;
-            line-height: 1;
+        top: 2rem;
+        right: 2rem;
+        text-decoration: none;
+        font-size: 3.6rem;
+        color: $color-black;
+        display: inline-block;
+        line-height: 1;
+
+        @media (max-width: 600px) {
+           top: 0rem;
+           right: .5rem; 
+        }
     	}
 
     	&:hover {
